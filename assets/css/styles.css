@@ -192,6 +192,7 @@ img {
 
 .nav__logo:hover {
   color: var(--first-color);
+  text-decoration: none;
 }
 
 .nav__toggle {
@@ -231,8 +232,9 @@ img {
   font-weight: var(--font-medium);
 }
 
-.nav_-link:hover {
+.nav__link:hover {
   color: var(--first-color);
+  text-decoration: none;
 }
 
 .nav__icon {
@@ -364,6 +366,8 @@ img {
 
 .button:hover {
   background-color: var(--first-color-alt);
+  color: #fff;
+  text-decoration: none;
 }
 
 .button__icon {
@@ -424,6 +428,43 @@ img {
   display: flex;
   justify-content: center;
 }
+
+.about__description-points {
+  padding-bottom: 0.5rem;
+}
+
+/*======================Projects=========================*/
+.projects__img {
+  width: 300px;
+  border-radius: 0.5rem;
+  justify-self: center;
+  align-self: center;
+  padding-left: 1.5rem;
+}
+
+.projects__description {
+  font-size: smaller;
+  text-align: justify;
+  margin-bottom: var(--mb-2-5);
+}
+.projects__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+.projects__data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.projects__bullets {
+  padding-left: 1.5rem;
+}
+
+.projects__ul {
+  padding-bottom: 0.5rem;
+  list-style-type: square;
+}
+
 /*==================== SKILLS ====================*/
 
 .skills__container {
@@ -798,6 +839,10 @@ img {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--text-color-light);
 }
+.about__img {
+  align-items: center;
+}
+
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {
@@ -867,6 +912,9 @@ img {
     display: grid;
     grid-template-columns: 0.6fr;
     justify-content: center;
+  }
+  .about__img {
+    padding-bottom: 15rem;
   }
 
   @media screen and (min-width: 768px) {
@@ -999,6 +1047,12 @@ img {
     .footer__copy {
       margin-top: 4.5rem;
     }
+    .about__img {
+      padding-bottom: 15rem;
+    }
+    .change-theme {
+      margin-top: -0.85rem;
+    }
   }
 }
 
@@ -1026,5 +1080,11 @@ img {
   }
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .about__img {
+    padding-bottom: 15rem;
+  }
+  .change-theme {
+    margin-top: -0.85rem;
   }
 }
